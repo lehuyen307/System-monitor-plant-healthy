@@ -1,0 +1,38 @@
+@import "../abstracts";
+
+.container {
+    max-width: 1170px;
+}
+
+.header {
+    .header__inner {
+        // display: flex;
+    }
+
+    .header-row {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header-row__left {
+            display: flex;
+            flex-direction: column;
+
+            > .email {
+                color: $color-green;
+                font-weight: 500;
+                font-size: 1.6rem;
+            }
+
+            > .desc {
+                
+            }
+        }
+
+        .header-row__right {
+            display: flex;
+            align-items: center;
+        }
+    }
+}

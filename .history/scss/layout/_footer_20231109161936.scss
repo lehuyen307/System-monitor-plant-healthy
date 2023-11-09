@@ -1,0 +1,22 @@
+@import "../abstracts";
+
+.container {
+    max-width: 1320px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: 100px;
+    padding: 80px 0 80px;
+    background: #a3b18a;
+
+    .footer__heading {
+        text-align: center;
+        font-size: 2.4rem;
+        color: #fff5fa;
+        font-family: "Sora";
+    }
+}

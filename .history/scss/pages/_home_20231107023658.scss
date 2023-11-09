@@ -1,0 +1,40 @@
+@import "../abstracts";
+
+.container {
+    max-width: 1420px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    background: #fffaf5;
+
+    &__inner {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header__logo {
+            width: 120px;
+            height: 60px;
+        }
+
+        .header__pic {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .header__name {
+            margin-left: 5px;
+        }
+
+        .header-list {
+            display: flex;
+        }
+    }
+}

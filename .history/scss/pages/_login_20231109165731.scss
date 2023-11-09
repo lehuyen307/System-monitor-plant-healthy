@@ -1,0 +1,17 @@
+@import "../abstracts";
+
+.login {
+    background: #fff;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    .login__pic-2 {
+        width: 200px;
+        height: 400px;
+    }
+}

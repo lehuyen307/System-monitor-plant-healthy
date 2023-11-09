@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>System tree monitor</title>
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Serif:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Sora:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <!-- font-awesome -->
+        <script src="https://kit.fontawesome.com/3115b3f4f1.js"></script>
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- style -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- link tái sử dụng header footer-->
+        <script src="./assets/js/scripts.js"></script>
+
+        <!-- style slick slider -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+    </head>
+    <body>
+        <main>
+            <div class="login row-cols-lg-2">
+                <div class="login__left">
+                    <div class="login__logo">
+                        <img
+                            src="./assets/img/login/logo.png"
+                            alt=""
+                            class="login__pic"
+                        />
+                        <div class="name">FarmControl</div>
+                    </div>
+                    <img
+                        src="/assets/img/login/undraw_access_account_re_8spm 1.svg"
+                        alt=""
+                        class="login__pic-2"
+                    />
+                </div>
+                <div class="login__right">
+                    <div class="form form-1 hidden">
+                        <div class="login__desc">Start for free</div>
+                        <div class="login__row">
+                            <span>Sign In to</span>
+                            <span class="text">FarmControl</span>
+                        </div>
+                        <form autocomplete="on" class="form-login">
+                            <div class="form__info">
+                                <label for="email">Email</label>
+                                <input
+                                    type="text"
+                                    class="input"
+                                    placeholder="Enter your email"
+                                    name="email"
+                                    id="email"
+                                />
+                            </div>
+                            <div class="form__info">
+                                <label for="password">Password</label>
+                                <input
+                                    type="text"
+                                    class="input"
+                                    placeholder="6+ Characters, 1 Capital letter"
+                                    name="password"
+                                    id="password"
+                                />
+                            </div>
+                            <button type="submit" class="btnSignIn">
+                                Sign In
+                            </button>
+                            <div class="login__row row-2">
+                                <span>Don't have any account?</span>
+                                <span class="text signIn">Sign up</span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="form form-2 visible">
+                        <div class="login__desc">Start for free</div>
+                        <div class="login__row">
+                            <span>Sign Up to</span>
+                            <span class="text">FarmControl</span>
+                        </div>
+                        <form autocomplete="on" class="form-login form-SignUp">
+                            <div class="form__info">
+                                <label for="nameSignUp">Name</label>
+                                <input
+                                    type="text"
+                                    placeholder="Enter your full name"
+                                    name="nameSignUp"
+                                    id="nameSignUp"
+                                    required
+                                />
+                                <small class="nameSignUp"></small>
+                            </div>
+                            <div class="form__info">
+                                <label for="emailSignUp">Email</label>
+                                <input
+                                    type="email"
+                                    placeholder="Enter your email"
+                                    name="emailSignUp"
+                                    id="emailSignUp"
+                                    required
+                                />
+                                <small></small>
+                            </div>
+                            <div class="form__info">
+                                <label for="passwordSignUp">Password</label>
+                                <div class="password">
+                                    <input
+                                        type="password"
+                                        placeholder="Enter your password"
+                                        name="passwordSignUp"
+                                        id="passwordSignUp"
+                                        required
+                                    />
+                                    <small></small>
+                                    <i class="fa-solid fa-eye icon-1"></i>
+                                </div>
+                            </div>
+                            <div class="form__info">
+                                <label for="passwordSignUp2"
+                                    >Re-type Password</label
+                                >
+                                <div class="password">
+                                    <input
+                                        type="password"
+                                        placeholder="Re-enter your password"
+                                        name="passwordSignUp2"
+                                        id="passwordSignUp2"
+                                        required
+                                    />
+                                    <small></small>
+                                    <i class="fa-solid fa-eye icon-2"></i>
+                                </div>
+                            </div>
+                            <button type="submit" class="btnSignUp">
+                                Create account
+                            </button>
+                            <div class="login__row row-2">
+                                <span>Already have an account</span>
+                                <span class="text signUp">Sign in</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-back">
+                <span>Back</span>
+                <i class="fa-solid fa-right-to-bracket"></i>
+            </div>
+
+            <div class="popup">
+                
+            </div>
+        </main>
+
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+
+        <script src="./assets/js/login.js"></script>
+        <script src="./assets/js/slick-slider.js"></script>
+    </body>
+</html>

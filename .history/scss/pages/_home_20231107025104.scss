@@ -1,0 +1,81 @@
+@import "../abstracts";
+
+.container {
+    max-width: 1320px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fffaf5;
+
+    &__inner {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header__logo {
+            width: 95px;
+            height: 45px;
+        }
+
+        .header__pic {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .header__name {
+            font-family: "Noto Serif", serif;
+            width: 200px;
+            margin-left: 5px;
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+
+        .header-list {
+            display: flex;
+
+            &__item {
+                padding: 10px 15px;
+            }
+
+            &__link {
+                color: $color-black;
+                font-weight: 500;
+                font-size: 1.8rem;
+                transition: all 0.25s linear;
+
+                &:hover {
+                    color: #344e41;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .header__right {
+            display: flex;
+            column-gap: 10px;
+
+            .header__search {
+                margin-right: 10px;
+
+                > i {
+                    font-size: 1.8rem;
+                    cursor: pointer;
+                }
+            }
+
+            .header__btn {
+                width: 70px;
+                height: 50px;
+                background: #3a5a40;
+                border-radius: 10px;
+            }
+        }
+    }
+}

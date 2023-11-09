@@ -1,0 +1,25 @@
+@mixin heading {
+    font-size: 6.6rem;
+    font-weight: 800;
+    line-height: 76px;
+}
+
+@mixin desc {
+    color: #656689;
+    font-size: 1.6rem;
+    line-height: 1.88;
+}
+
+@mixin btn {
+    --height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    min-width: 100px;
+    height: var(--height);
+    background: #3a5a40;
+    border: #3a5a40;
+    text-align: center;
+    border-radius: 20px;
+}

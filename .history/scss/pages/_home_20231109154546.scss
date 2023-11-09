@@ -1,0 +1,212 @@
+@import "../abstracts";
+
+.container {
+    max-width: 1320px;
+}
+
+.header-hero {
+    margin: 50px auto 0;
+    width: 1420px;
+
+    .header-hero__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .heading {
+        color: #344e41;
+        @include heading;
+        font-family: "Sora", sans-serif;
+    }
+
+    .desc {
+        @include desc;
+        margin-top: 24px;
+        font-size: 2rem;
+    }
+
+    .header-thumb {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .header-hero__img {
+        display: block;
+        border-radius: 10px;
+        height: 420px;
+        filter: brightness(90%);
+    }
+
+    .header-contact {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+
+        .btn {
+            @include btn;
+            background: #588157;
+            min-width: 130px;
+            --height: 50px;
+            color: #fff;
+            box-shadow: 0px 13px 26px -8px #588157;
+            transition: all 0.25s ease;
+
+            &:hover {
+                background: rgba(0, 0, 0, 0.25);
+            }
+        }
+
+        .header-phone {
+            line-height: 1.67;
+            font-size: 1.8rem;
+            color: #000;
+        }
+    }
+}
+
+.slick-arrow {
+    border-radius: 99px;
+    background: #dadada;
+    color: #333;
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: all 0.25s linear;
+}
+
+.slick-arrow:hover {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 30px);
+    display: flex !important;
+    // để đè được thuộc tính display: block của thẻ
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.slick-dots button {
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 99px;
+    background: #eee;
+    border: none;
+    outline: none;
+}
+
+.slick-dots .slick-active button {
+    background: #006340;
+}
+
+.growth {
+    margin-top: 120px;
+
+    .growth__content {
+        position: relative;
+        .heading {
+            @include heading;
+            font-size: 5rem;
+            color: #344e41;
+            line-height: 1;
+            text-align: center;
+        }
+
+        .desc {
+            position: absolute;
+            top: 50px;
+            left: 450px;
+            text-align: center;
+            width: 400px;
+            margin-top: 50px;
+            @include desc;
+        }
+    }
+
+    .growth__list {
+        display: flex;
+        position: relative;
+
+        .growth__item {
+            padding: 10px 15px;
+            position: absolute;
+            width: 340px;
+            height: 200px;
+            background: #fff;
+            border-radius: 10px;
+            transition: all 0.25s ease;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+            .growth__img {
+                width: 90%;
+                height: 90%;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+
+            &:hover {
+                transform: translateY(-10px);
+            }
+        }
+
+        .growth__item:nth-child(1) {
+            top: 50px;
+            left: 0;
+        }
+
+        .growth__item:nth-child(2) {
+            top: 280px;
+            left: 0;
+        }
+
+        .growth__item:nth-child(3) {
+            top: 510px;
+            left: 0;
+        }
+
+        .growth__item:nth-child(4) {
+            top: 50px;
+            right: 0;
+        }
+
+        .growth__item:nth-child(5) {
+            top: 280px;
+            right: 0;
+        }
+
+        .growth__item:nth-child(6) {
+            top: 510px;
+            right: 0;
+        }
+
+        .growth__center {
+            position: absolute;
+            top: 200px;
+            left: 480px;
+
+            > img {
+                border-radius: 10px;
+                width: 340px;
+                height: 500px;
+            }
+        }
+    }
+}
+
+.solutions {
+    margin-top: 700px;
+}

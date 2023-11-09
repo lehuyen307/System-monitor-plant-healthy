@@ -1,0 +1,38 @@
+@import "../abstracts";
+
+.container {
+    max-width: 1320px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: 100px;
+    padding: 80px 0 80px;
+    background: #a3b18a;
+
+    .footer__heading {
+        text-align: center;
+        font-size: 2.4rem;
+        color: $color-black;
+        font-family: "Sora";
+    }
+    .footer__desc {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .footer__contact {
+        margin-top: 10px;
+        // text-align: center;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+
+        > i {
+            display: block;
+            font-size: 4rem;
+        }
+    }
+}

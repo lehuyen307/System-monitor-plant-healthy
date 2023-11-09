@@ -1,0 +1,11 @@
+@import "../abstracts";
+
+.header-hero {
+    margin: 0 auto;
+    width: 1410px;
+
+    .header-hero__img {
+        width: 100%;
+        height: 100%;
+    }
+}
