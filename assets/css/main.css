@@ -1275,6 +1275,7 @@ a {
   transition: all 0.25s linear;
 }
 .header__inner .header__right {
+  position: relative;
   display: flex;
   align-items: center;
   column-gap: 10px;
@@ -1288,9 +1289,8 @@ a {
 }
 .header__inner .header__right .header__btn {
   --height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  line-height: var(--height);
   column-gap: 10px;
   min-width: 100px;
   height: var(--height);
@@ -1321,6 +1321,78 @@ a {
   position: fixed;
   pointer-events: none;
   transition: all 0.25s ease;
+}
+
+.btn__login {
+  --height: 60px;
+  display: block;
+  line-height: var(--height);
+  column-gap: 10px;
+  min-width: 100px;
+  height: var(--height);
+  background: #588157;
+  border: #588157;
+  text-align: center;
+  border-radius: 99px;
+  --height: 60px;
+  padding: 0 15px;
+  background: transparent;
+  border: 2px solid #f7f0f0;
+}
+.btn__login > * {
+  pointer-events: none;
+}
+.btn__login > .welcome {
+  margin-left: 5px;
+}
+.btn__login > i {
+  color: #344e41;
+  font-size: 1.4rem;
+}
+.btn__login .userName {
+  font-weight: 500;
+  font-size: 1.7rem;
+  font-family: "Sora";
+  color: #344e41;
+}
+
+.btn__logout {
+  column-gap: 10px;
+  position: absolute;
+  right: 8px;
+  top: 70px;
+  background: #124559;
+  border-radius: 10px;
+  color: #fff;
+  transition: 0.25s linear;
+  z-index: 2;
+}
+.btn__logout.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.btn__logout.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.btn__logout > * {
+  pointer-events: none;
+}
+.btn__logout .logout__list {
+  max-height: 180px;
+  min-width: 220px;
+  padding: 10px 0;
+}
+.btn__logout .logout__list .logout__item {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f7f0f0;
+}
+.btn__logout .logout__list .logout__item:last-child {
+  border: none;
 }
 
 .container {
@@ -1415,9 +1487,8 @@ a {
 }
 .header-hero .header-contact .btn {
   --height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  line-height: var(--height);
   column-gap: 10px;
   min-width: 100px;
   height: var(--height);
@@ -1634,13 +1705,14 @@ a {
 }
 
 .login {
+  overflow: hidden;
   background: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 1000px;
-  height: 600px;
+  min-height: 700px;
   display: flex;
   border-radius: 20px;
   padding: 20px;
@@ -1746,6 +1818,7 @@ a {
 }
 .login .login__right .form .login__row.row-2 {
   justify-content: center;
+  align-items: center;
   margin-top: 10px;
   font-size: 1.6rem;
 }
@@ -1786,14 +1859,13 @@ a {
   top: 15px;
 }
 
-small {
-  position: absolute;
-  bottom: -14px;
-  font-size: 1rem;
-}
-
 .nameSignUp {
   top: 200px;
+}
+
+.text {
+  margin-top: 5px;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

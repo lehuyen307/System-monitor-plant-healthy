@@ -1,0 +1,48 @@
+@mixin heading {
+    font-size: 6.6rem;
+    font-weight: 800;
+    line-height: 76px;
+}
+
+@mixin desc {
+    color: #656689;
+    font-size: 1.6rem;
+    line-height: 1.88;
+}
+
+@mixin btn {
+    --height: 60px;
+    display: block;
+    line-height: 1;
+    column-gap: 10px;
+    min-width: 100px;
+    height: var(--height);
+    background: #588157;
+    border: #588157;
+    text-align: center;
+    border-radius: 99px;
+}
+
+@mixin line-effect {
+    width: 0;
+    height: 2px;
+    background: #0b650f;
+    position: fixed;
+    pointer-events: none;
+    transition: all 0.25s ease;
+}
+
+@mixin visible {
+    display: block
+}
+
+@mixin hidden {
+    display: none
+}
+
+@mixin center_abs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

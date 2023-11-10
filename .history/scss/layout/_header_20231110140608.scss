@@ -1,0 +1,121 @@
+@import "../abstracts";
+
+.container {
+    max-width: 1320px;
+}
+
+a {
+    text-decoration: none;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.header {
+    background: #dad7cd;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.25s linear;
+
+    &.is-fixed {
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        left: 0;
+        top: 0;
+        animation: fade 0.25s forwards 1;
+    }
+
+    &__inner {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header__logo {
+            width: 95px;
+            height: 40px;
+        }
+
+        .header__pic {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .header__name {
+            color: #344e41;
+            font-family: "Sora", sans-serif;
+            width: 200px;
+            margin-left: 5px;
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+
+        .header-list {
+            display: flex;
+
+            &__item {
+                padding: 10px 15px;
+            }
+
+            &__link {
+                color: $color-black;
+                font-weight: 500;
+                font-size: 2rem;
+                transition: all 0.25s linear;
+            }
+        }
+
+        .header__right {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+
+            .header__search {
+                margin-right: 10px;
+
+                > i {
+                    font-size: 1.8rem;
+                    cursor: pointer;
+                }
+            }
+
+            .header__btn {
+                @include btn;
+                --height: 45px;
+
+                &:hover {
+                    background: #344e41;
+                }
+
+                > a,
+                i {
+                    color: #fff;
+                }
+
+                > a {
+                    line-height: 1.8;
+                }
+            }
+
+            .header__icon {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+.line {
+    @include line-effect;
+}
+
+.btn__login {
+    --height: 20px;
+    @include btn;
+}
