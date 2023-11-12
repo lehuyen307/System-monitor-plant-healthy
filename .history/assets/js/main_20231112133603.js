@@ -53,7 +53,7 @@ window.addEventListener("load", function (e) {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const userName = sessionStorage.getItem("userName");
+    const userName = se.getItem("userName");
     if (userName) {
         const headerBtn = document.querySelector(".header__btn");
         headerBtn.style.display = "none";
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
             headerBtn.style.display = "block";
             headerIcon.style.display = "block";
             btnLogin.style.display = "none";
-            sessionStorage.removeItem("userName");
+            se.removeItem("userName");
             btnLogout.classList.add("hidden");
             btnLogout.classList.remove("visible");
         });

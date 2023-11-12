@@ -293,7 +293,7 @@ formSignIn.addEventListener("submit", async function (e) {
     ); // nếu tìm thấy thì thành công và ngược lại
     if (found) {
         window.location.href = "index.html";
-        sessionStorage.setItem("userName", found.nameSignUp);
+        s.setItem("userName", found.nameSignUp);
     } else {
         alert("that bai");
     }
