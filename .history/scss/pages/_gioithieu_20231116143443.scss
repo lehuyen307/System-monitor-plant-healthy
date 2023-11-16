@@ -1,0 +1,23 @@
+@import "../abstracts";
+
+.introduce {
+    margin-top: 50px;
+
+    &__heading {
+        @include heading;
+        font-size: 2.6rem;
+        font-family: 'Sora';
+        font-weight: 500;
+        color: $color-green;
+    }
+
+    &__quotes {
+        font
+        margin-top: 10px;
+    }
+
+    &__desc {
+        font
+        margin-top: 10px;
+    }
+}
