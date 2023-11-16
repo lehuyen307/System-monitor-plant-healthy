@@ -1,0 +1,104 @@
+import os
+from os import listdir
+from numpy import asarray
+from numpy import save
+from keras.utils import load_img
+from keras.utils import img_to_array
+import numpy as np
+folder=r'C:\Users\ASUS\Downloads\Data A.I\Data A.I Project\Tomato_Leaves\train'
+ 
+x, y = list(), list()
+for file in listdir(folder+r'\Tomato___Bạc lá muộn'):
+    if file.startswith('Bac la muon'):
+      output = 0
+    if output is not None:
+      img = load_img(os.path.join(folder+r'\Tomato___Bạc lá muộn',file), target_size=(200, 200,3))
+      img= img_to_array(img)
+      x.append(img)
+      y.append(output)      
+for file in listdir(folder+r'\Tomato___Bạc lá sớm'):
+    if file.startswith('Bac la som'):
+      output = 1
+    if output is not None:
+      img = load_img(os.path.join(folder+r'\Tomato___Bạc lá sớm',file), target_size=(200, 200,3))
+      img= img_to_array(img)
+      x.append(img)
+      y.append(output)
+for file in listdir(folder+r'\Tomato___Khỏe mạnh'):
+    if file.startswith('Khoe manh'):
+      output = 2
+    if output is not None:
+      img = load_img(os.path.join(folder+r'\Tomato___Khỏe mạnh',file), target_size=(200, 200,3))
+      img= img_to_array(img)
+      x.append(img)
+      y.append(output)
+for file in listdir(folder+r'\Tomato___Mốc lá'):
+    if file.startswith('Moc la'):
+      output = 3
+    if output is not None:
+      img = load_img(os.path.join(folder+r'\Tomato___Mốc lá',file), target_size=(200, 200,3))
+      img= img_to_array(img)
+      x.append(img)
+      y.append(output)
+for file in listdir(folder+r'\Tomato___Nhện ve hai đốm'):
+    if file.startswith('Nhen hai dom'):
+      output = 4
+    if output is not None:
+      img = load_img(os.path.join(folder+r'\Tomato___Nhện ve hai đốm',file), target_size=(200, 200,3))
+      img= img_to_array(img)
+      x.append(img)
+      y.append(output)
+for file in listdir(folder+r'\Tomato___Vàng xoắn lá'):
+    if file.startswith('Vang xoan la'):
+      output = 5
+    if output is not None:
+      img = load_img(os.path.join(folder+r'\Tomato___Vàng xoắn lá',file), target_size=(200, 200,3))
+      img= img_to_array(img)
+      x.append(img)
+      y.append(output)
+for file in listdir(folder+r'\Tomato___Virus khảm lá'):
+    if file.startswith('Kham la'):
+      output = 6
+    if output is not None:
+      img = load_img(os.path.join(folder+r'\Tomato___Virus khảm lá',file), target_size=(200, 200,3))
+      img= img_to_array(img)
+      x.append(img)
+      y.append(output)
+for file in listdir(folder+r'\Tomato___Điểm mục tiêu'):
+    if file.startswith('Diem muc tieu'):
+      output = 7
+    if output is not None:
+      img = load_img(os.path.join(folder+r'\Tomato___Điểm mục tiêu',file), target_size=(200, 200,3))
+      img= img_to_array(img)
+      x.append(img)
+      y.append(output)
+for file in listdir(folder+r'\Tomato___Đốm lá nâu'):
+    if file.startswith('Dom la nau'):
+      output = 8
+    if output is not None:
+      img = load_img(os.path.join(folder+r'\Tomato___Đốm lá nâu',file), target_size=(200, 200,3))
+      img= img_to_array(img)
+      x.append(img)
+      y.append(output)
+for file in listdir(folder+r'\Tomato___Đốm vi khuẩn'):
+    if file.startswith('Dom vi khuan'):
+      output = 9
+    if output is not None:
+      img = load_img(os.path.join(folder+r'\Tomato___Đốm vi khuẩn',file), target_size=(200, 200,3))
+      img= img_to_array(img)
+      x.append(img)
+      y.append(output)
+x = asarray(x)
+y = asarray(y)
+ 
+print(x.shape,'và',y.shape)
+ 
+x=x.astype('float32')/255
+ 
+from keras.utils import to_categorical
+y=to_categorical(y,10)
+ 
+from sklearn.model_selection import train_test_split
+x_train,x_test,y_train,y_test = train_test_split(x,y,test_size = 0.3)
+ 
+print(x_train.shape,'và',x_test.shape)
