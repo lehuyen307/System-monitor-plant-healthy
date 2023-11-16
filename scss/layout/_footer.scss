@@ -17,7 +17,7 @@ a {
         text-align: center;
         font-size: 2.4rem;
         color: $color-black;
-        font-family: "Sora";
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .footer__desc {
         margin-top: 10px;
@@ -45,8 +45,9 @@ a {
         }
 
         .info {
-            line-height: 1.2;
-            font-size: 2rem;
+            line-height: 1.5;
+            font-size: 1.8rem;
+
         }
     }
 }

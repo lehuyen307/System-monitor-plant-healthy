@@ -1,0 +1,15 @@
+@import "../abstracts";
+
+.news {
+    &__inner {
+        display: flex;
+    }
+
+    &__list {
+        
+
+        &.news__item {
+            width: 100%;
+        }
+    }
+}

@@ -33,11 +33,11 @@
 }
 
 @mixin visible {
-    display: block
+    display: block;
 }
 
 @mixin hidden {
-    display: none
+    display: none;
 }
 
 @mixin center_abs {

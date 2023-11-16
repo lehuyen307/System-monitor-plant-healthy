@@ -55,6 +55,7 @@ window.addEventListener("load", function (e) {
 document.addEventListener("DOMContentLoaded", function () {
     const userName = sessionStorage.getItem("userName");
     if (userName) {
+        // xử lý ở phần header // không liên quan các trang main
         const headerBtn = document.querySelector(".header__btn");
         headerBtn.style.display = "none";
         const headerIcon = document.querySelector(".header__icon");

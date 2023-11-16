@@ -1,0 +1,48 @@
+@import "../abstracts";
+
+.news {
+    margin-top: 50px;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 50px;
+
+        .news__item {
+            border-radius: 10px;
+            padding: 10px 20px 20px;
+            width: 45%;
+            margin-bottom: 40px;
+            background-color: #fff;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+            .news__img {
+                width: 100%;
+                border-radius: 5px;
+            }
+
+            .news__date {
+                @include desc;
+                font-size: 1.2rem;
+            }
+
+            .news__heading {
+                color: $color-green;
+                text-decoration: underline;
+                text-underline-offset: 5px;
+                line-height: 1.2;
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+    &__sidebar {
+        width: 100%;
+        background: #fff;
+        min
+    }
+}

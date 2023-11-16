@@ -8,5 +8,8 @@
     "start": "sass scss:assets/css -w"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "google-translate-api": "^2.3.0"
+  }
 }
