@@ -1,0 +1,22 @@
+@import "../abstracts";
+
+.news {
+    margin-top: 100px;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__list {
+    display: flex;
+
+        .news__item {
+            width: 50%;
+            
+
+            .news__img {
+                width: 100%;
+            }
+        }
+    }
+}

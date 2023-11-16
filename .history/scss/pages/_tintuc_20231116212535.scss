@@ -1,0 +1,27 @@
+@import "../abstracts";
+
+.news {
+    margin-top: 100px;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 50px;
+
+        .news__item {
+            padding: 0 20px 30px;
+            width: 45%;
+            margin-bottom: 40px;
+            background-color: #fff;
+
+            .news__img {
+                width: 100%;
+                border-radius: 5px;
+            }
+        }
+    }
+}
