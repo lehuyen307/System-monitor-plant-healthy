@@ -1,0 +1,48 @@
+import os
+from os import listdir
+from numpy import asarray
+from numpy import save
+from keras.utils import load_img
+from keras.utils import img_to_array
+import numpy as np
+folder=r'C:\Users\ASUS\Downloads\Data A.I\Data A.I Project\Tomato'
+ 
+x, y = list(), list()
+for file in listdir(folder+r'\Chưa chín (Unripe)'):
+    if file.startswith('Chua chin'):
+      output = 0
+    if output is not None:
+      img = load_img(os.path.join(folder+r'\Chưa chín (Unripe)',file), target_size=(200, 200,3))
+      img= img_to_array(img)
+      x.append(img)
+      y.append(output)      
+for file in listdir(folder+r'\Gần chín (Semi-ripe)'):
+    if file.startswith('Gan chin'):
+      output = 1
+    if output is not None:
+      img = load_img(os.path.join(folder+r'\Gần chín (Semi-ripe)',file), target_size=(200, 200,3))
+      img= img_to_array(img)
+      x.append(img)
+      y.append(output)
+for file in listdir(folder+r'\Đã chín (Ripe)'):
+    if file.startswith('Da chin'):
+      output = 2
+    if output is not None:
+      img = load_img(os.path.join(folder+r'\Đã chín (Ripe)',file), target_size=(200, 200,3))
+      img= img_to_array(img)
+      x.append(img)
+      y.append(output)
+x = asarray(x)
+y = asarray(y)
+ 
+print(x.shape,'và',y.shape)
+ 
+x=x.astype('float32')/255
+ 
+from keras.utils import to_categorical
+y=to_categorical(y,3)
+ 
+from sklearn.model_selection import train_test_split
+x_train,x_test,y_train,y_test = train_test_split(x,y,test_size = 0.3)
+ 
+print(x_train.shape,'và',x_test.shape)
