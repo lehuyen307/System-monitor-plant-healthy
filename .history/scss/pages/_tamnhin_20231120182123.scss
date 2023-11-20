@@ -1,0 +1,18 @@
+@import "../abstracts";
+
+.nav__page {
+    &:first-child {
+        background-color: #d5bdaf;
+    }
+
+    .nav__inner {
+        margin-top: 50px;
+        display: flex;
+
+        .nav__content {
+            height: 300px;
+            width: 600px;
+            object-fit: contain;
+        }
+    }
+}

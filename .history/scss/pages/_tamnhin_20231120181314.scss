@@ -1,0 +1,12 @@
+@import "../abstracts";
+
+.nav__page {
+    margin-top: 50px;
+    display: flex;
+
+    .nav__content {
+        height: 300px;
+        width: 600px;
+        object-fit: contain;
+    }
+}

@@ -1,0 +1,109 @@
+@import "../abstracts";
+
+.nav {
+    margin-top: 50px;
+
+    &__row {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+
+        .home {
+            color: #000;
+        }
+
+        .muiten {
+            font-size: 1.2rem;
+        }
+
+        .text {
+            font-size: 1.6rem;
+            color: #000;
+            font-weight: 600;
+
+            &.text2light {
+                color: $color-green;
+            }
+        }
+    }
+
+    &__heading {
+        letter-spacing: -1px;
+        margin-top: 30px;
+        font-size: 3rem;
+
+        &.heading-2 {
+            text-align: center;
+            font-size: 2.4rem;
+        }
+    }
+
+    &__tittle {
+        margin-top: 30px;
+        color: $color-green;
+        font-weight: 500;
+    }
+
+    &__desc {
+        text-align: justify;
+        margin-top: 20px;
+        @include desc;
+        line-height: 1.4;
+    }
+
+    &__list {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        gap: 30px;
+
+        .nav__item {
+            padding-top: 20px;
+            height: 370px;
+            background: #f7f5ec;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 5px;
+            transition: all 0.3s linear;
+
+            &:hover {
+                transform: translateY(-20px);
+            }
+        }
+
+        .nav__img {
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            margin-left: 25px;
+        }
+
+        .nav__name,
+        .nav__mission {
+            text-align: center;
+        }
+
+        .nav__name {
+            margin-top: 20px;
+            font-size: 2rem;
+            color: #bc4749;
+            font-weight: 500;
+        }
+
+        .nav__mission {
+            margin-top: 10px;
+            padding: 0 10px;
+        }
+    }
+
+    .nav__desc {
+        &.desc-2 {
+            margin-top: 30px;
+        }
+
+        > span {
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+}

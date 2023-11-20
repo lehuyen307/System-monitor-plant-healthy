@@ -1,0 +1,53 @@
+@import "../abstracts";
+
+.nav {
+    margin-top: 50px;
+
+    &__row {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+
+        .home {
+            color: #000;
+        }
+
+        .muiten {
+            font-size: 1.2rem;
+        }
+
+        .text {
+            font-size: 1.6rem;
+            color: #000;
+            font-weight: 600;
+
+            &.text2light {
+                color: $color-green;
+            }
+        }
+
+    }
+
+    &__heading {
+        letter-spacing: -1px;
+        margin-top: 30px;
+        font-size: 3rem;
+
+        &.heading-2 {
+            
+        }
+    }
+
+    &__tittle {
+        margin-top: 30px;
+        color: $color-green;
+        font-weight: 500;
+    }
+
+    &__desc {
+        text-align: justify;
+        margin-top: 20px;
+        @include desc;
+        line-height: 1.4;
+    }
+}

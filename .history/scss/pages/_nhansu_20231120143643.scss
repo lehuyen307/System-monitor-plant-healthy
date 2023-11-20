@@ -1,0 +1,11 @@
+@import "../abstracts";
+
+.nav {
+    margin-top: 50px;
+
+    &__row {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+}

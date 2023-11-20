@@ -1,0 +1,45 @@
+@import "../abstracts";
+
+.nav__page {
+    .nav__inner {
+        margin-top: 50px;
+        display: flex;
+
+        .nav__content {
+            height: 400px;
+            width: 800px;
+            object-fit: contain;
+        }
+    }
+
+    .nav__quotes {
+        margin-top: 5px;
+        font-size: 3.6rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        width: 900px;
+    }
+
+    .nav__tittle {
+        font-size: 1.8rem;
+    }
+
+    .nav__text {
+        margin-top: 10px;
+        font-size: 1.8rem;
+        line-height: 1.4;
+    }
+
+    
+}
+
+.nav__page.pageSpecial {
+    margin-top: 50px;
+    background-color: #f5ebe0;
+    padding: 50px 0;
+
+    .nav__inner {
+        display: flex;
+        column-gap: 20px;
+    }
+}
