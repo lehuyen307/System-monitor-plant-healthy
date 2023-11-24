@@ -1,0 +1,18 @@
+// {
+//     "sick": [
+//         {
+//             "name": "Bệnh bạc lá muộn ở cây cà chua",
+//             "text-1": "Bệnh bạc lá muộn (hay bệnh sương mai) là một bệnh nghiêm trọng gây hại cho cây cà chua. Bệnh do nấm Phytophthora infestans gây ra, nấm này phát triển mạnh trong điều kiện nhiệt độ thấp và ẩm ướt.",
+//             "text-2": "Trên lá: Vết bệnh ban đầu có màu xanh đậm như úng nước, sau đó chuyển sang nâu đen, vết bệnh lớn dần, nếu trời ẩm trên bề mặt lớp bệnh có lớp tơ màu trắng bao phủ, bệnh nặng sẽ làm thối nhũn lá, nếu thời tiết khô, vết trên lá cũng khô dòn dễ vỡ Trên thân cành: Bị bệnh từng đoạn dài, vỏ và ruột thân lúc đầu màu nâu hoặc thâm đen, sau đó thối ướt màu nâu đen.Trên quả: Vết bệnh ban đầu có màu xanh nhạt, sau đó chuyển sang nâu đen, vết bệnh lan rộng ra xung quanh, làm cho quả bị thối nhũn",
+//             "text-3": "Sử dụng giống cà chua kháng bệnh. Luân canh cây trồng, không trồng cà chua liên tục nhiều vụ trên cùng một ruộng. Tưới nước hợp lý, tránh tưới nước quá nhiều. Thu gom và tiêu hủy tàn dư cây trồng sau thu hoạch. Phun thuốc trừ bệnh theo khuyến cáo của nhà sản xuất. Phun thuốc trừ bệnh bạc lá muộn cần thực hiện khi bệnh chớm xuất hiện hoặc phun phòng khi thời tiết thích hợp cho bệnh phát triển. Nên phun thuốc vào lúc chiều mát để thuốc có thời gian bám dính tốt hơn",
+//             "value": "number-1"
+//         },
+//         {
+//             "name": "Bệnh bạc lá sớm ở cây cà chua",
+//             "text-1": "Bệnh bạc lá sớm do nấm Alternaria solani gây ra. Nấm bệnh tồn tại trong đất, trên tàn dư thực vật và trong hạt giống. Nấm bệnh phát triển mạnh trong điều kiện thời tiết ẩm ướt, nhiệt độ từ 20 đến 25 độ C.",
+//             "text-2": "Trên lá: Ban đầu là những đốm nhỏ màu xanh đậm, sau đó chuyển sang màu nâu đen, có hình tròn hoặc bất định. Vết bệnh thường tập trung ở lá già, sau đó lan dần lên các lá non. Khi bệnh nặng, lá bị rụng sớm, ảnh hưởng đến năng suất cà chua Trên thân cành: Vết bệnh có hình tròn hoặc elip, màu nâu đen, thường xuất hiện ở phần tiếp giáp giữa thân và lá. Khi bệnh nặng, thân bị thối nhũn, cây cà chua dễ bị đổ ngã. Trên quả: Vết bệnh có hình tròn hoặc bầu dục, màu nâu đen, thường xuất hiện ở phần cuống quả. Khi bệnh nặng, quả bị thối, không thể sử dụng được.",
+//             "text-3": "Sử dụng giống cà chua kháng bệnh. Luân canh cây trồng, không trồng cà chua trên đất đã trồng cà chua liên tiếp trong nhiều vụ. Vệ sinh đồng ruộng, thu gom và tiêu hủy tàn dư thực vật. Tưới nước vừa đủ, tránh tưới nước quá nhiều. Phun thuốc phòng trừ bệnh định kỳ, khi cây cà chua bắt đầu ra hoa.: Carbendazim, Mancozeb, Chlorothalonil, Propiconazole, Tebuconazole, Fluazinam",
+//             "value": "number-2"
+//         }
+//     ]
+// }

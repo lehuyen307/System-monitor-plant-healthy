@@ -1,0 +1,94 @@
+@import "../abstracts";
+
+.sick {
+    margin-top: 30px;
+    &__inner {
+        border-radius: 5px;
+        background: #a3b18a;
+        padding: 0 50px 50px;
+
+        .service__heading {
+            font-size: 4rem;
+            margin-bottom: 30px;
+        }
+
+        .sick__table {
+            margin: 0 auto;
+            padding: 40px 50px;
+            width: 900px;
+            border: 1px solid #000;
+
+            .sick__row {
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .sick__title {
+                    margin-left: 30px;
+                    width: 100px;
+                    font-size: 4rem;
+                    font-family: 600;
+                    color: #003049;
+
+                    > .text1 {
+                        margin-left: 100px;
+                    }
+
+                    .text2 {
+                        display: block;
+                        margin-left: -200px;
+                    }
+
+                    .text3 {
+                        display: block;
+                        margin-left: -150px;
+                    }
+                }
+            }
+        }
+
+        .sick__desc {
+            font-family: "Roboto";
+            padding: 25px;
+            border-radius: 25px;
+            max-width: 500px;
+            min-height: 120px;
+            background-color: #dedbd2;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            font-size: 2rem;
+            font-style: italic;
+            line-height: 1.2;
+
+            &.desc-1 {
+            }
+        }
+
+        .sick__color {
+            display: inline;
+            color: $color-green;
+            font-weight: 500;
+        }
+
+        .sick__text {
+            text-align: left;
+            font-family: "Roboto";
+            max-width: 200px;
+            margin: 0 20px;
+            font-size: 2rem;
+            color: #dadada;
+        }
+
+        .sick__listImg {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 30px;
+
+            > img {
+                border-radius: 5px;
+                object-fit: contain;
+                width: 100%;
+            }
+        }
+    }
+}

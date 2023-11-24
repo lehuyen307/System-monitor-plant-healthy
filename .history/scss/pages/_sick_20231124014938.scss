@@ -1,0 +1,28 @@
+@import "../abstracts";
+
+.sick {
+    margin-top: 30px;
+    &__inner {
+        border-radius: 5px;
+        background: #a3b18a;
+        padding: 50px;
+
+        .sick__row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .sick__title {
+                font-size: 3rem;
+                font-family: 500;
+            }
+
+            .sick__desc {
+                bor
+                width: 800px;
+                min-height: 200px;
+                background-color: #fff;
+            }
+        }
+    }
+}

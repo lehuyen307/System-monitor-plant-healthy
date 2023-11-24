@@ -1,0 +1,66 @@
+@import "../abstracts";
+
+.sick {
+    margin-top: 30px;
+    &__inner {
+        border-radius: 5px;
+        background: #a3b18a;
+        padding: 0 50px 50px;
+
+        .service__heading {
+            font-size: 4rem;
+            margin-bottom: 30px;
+        }
+
+        .sick__row {
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .sick__title {
+                margin-left: 30px;
+                width: 100px;
+                font-size: 4rem;
+                font-family: 600;
+                color: #003049;
+
+                > .text1 {
+                    margin-left: 100px;
+                }
+
+                .text2 {
+                    display: block;
+                    margin-left: -200px;
+                }
+
+                .text3 {
+                    display: block;
+                    margin-left: -170px;
+                }
+            }
+
+            .sick__desc {
+                padding: 25px;
+                border-radius: 25px;
+                width: 800px;
+                min-height: 120px;
+                background-color: #fff;
+                font-size: 2rem;
+                font-style: italic;
+                line-height: 1.2;
+            }
+        }
+
+        .sick__color {
+            display: inline;
+            color: $color-green;
+        }
+
+        .sick__text {
+            @include btn;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    }
+}

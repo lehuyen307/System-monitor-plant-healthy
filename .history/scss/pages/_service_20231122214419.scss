@@ -1,0 +1,11 @@
+@import "../abstracts";
+
+.service {
+    margin-top: 50px;
+
+    &__heading {
+        @include heading;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+}

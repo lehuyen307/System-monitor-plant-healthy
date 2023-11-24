@@ -1,0 +1,18 @@
+{
+    "sick": [
+        {
+            "name": "Bệnh bạc lá muộn ở cây cà chua",
+            "text-1": "Bệnh bạc lá muộn (hay bệnh sương mai) là một bệnh nghiêm trọng gây hại cho cây cà chua. Bệnh do nấm Phytophthora infestans gây ra, nấm này phát triển mạnh trong điều kiện nhiệt độ thấp và ẩm ướt.",
+            "text-2": "Trên lá: Vết bệnh ban đầu có màu xanh đậm như úng nước, sau đó chuyển sang nâu đen, vết bệnh lớn dần, nếu trời ẩm trên bề mặt lớp bệnh có lớp tơ màu trắng bao phủ, bệnh nặng sẽ làm thối nhũn lá, nếu thời tiết khô, vết trên lá cũng khô dòn dễ vỡ Trên thân cành: Bị bệnh từng đoạn dài, vỏ và ruột thân lúc đầu màu nâu hoặc thâm đen, sau đó thối ướt màu nâu đen.Trên quả: Vết bệnh ban đầu có màu xanh nhạt, sau đó chuyển sang nâu đen, vết bệnh lan rộng ra xung quanh, làm cho quả bị thối nhũn",
+            "text-3": "Sử dụng giống cà chua kháng bệnh. Luân canh cây trồng, không trồng cà chua liên tục nhiều vụ trên cùng một ruộng. Tưới nước hợp lý, tránh tưới nước quá nhiều. Thu gom và tiêu hủy tàn dư cây trồng sau thu hoạch. Phun thuốc trừ bệnh theo khuyến cáo của nhà sản xuất. Phun thuốc trừ bệnh bạc lá muộn cần thực hiện khi bệnh chớm xuất hiện hoặc phun phòng khi thời tiết thích hợp cho bệnh phát triển. Nên phun thuốc vào lúc chiều mát để thuốc có thời gian bám dính tốt hơn",
+            "value": "number-1"
+        }
+        {
+            "name": "Bệnh bạc lá muộn ở cây cà chua",
+            "text-1": "Bệnh bạc lá muộn (hay bệnh sương mai) là một bệnh nghiêm trọng gây hại cho cây cà chua. Bệnh do nấm Phytophthora infestans gây ra, nấm này phát triển mạnh trong điều kiện nhiệt độ thấp và ẩm ướt.",
+            "text-2": "Trên lá: Vết bệnh ban đầu có màu xanh đậm như úng nước, sau đó chuyển sang nâu đen, vết bệnh lớn dần, nếu trời ẩm trên bề mặt lớp bệnh có lớp tơ màu trắng bao phủ, bệnh nặng sẽ làm thối nhũn lá, nếu thời tiết khô, vết trên lá cũng khô dòn dễ vỡ Trên thân cành: Bị bệnh từng đoạn dài, vỏ và ruột thân lúc đầu màu nâu hoặc thâm đen, sau đó thối ướt màu nâu đen.Trên quả: Vết bệnh ban đầu có màu xanh nhạt, sau đó chuyển sang nâu đen, vết bệnh lan rộng ra xung quanh, làm cho quả bị thối nhũn",
+            "text-3": "Sử dụng giống cà chua kháng bệnh. Luân canh cây trồng, không trồng cà chua liên tục nhiều vụ trên cùng một ruộng. Tưới nước hợp lý, tránh tưới nước quá nhiều. Thu gom và tiêu hủy tàn dư cây trồng sau thu hoạch. Phun thuốc trừ bệnh theo khuyến cáo của nhà sản xuất. Phun thuốc trừ bệnh bạc lá muộn cần thực hiện khi bệnh chớm xuất hiện hoặc phun phòng khi thời tiết thích hợp cho bệnh phát triển. Nên phun thuốc vào lúc chiều mát để thuốc có thời gian bám dính tốt hơn",
+            "value": "number-1"
+        }
+    ]
+}

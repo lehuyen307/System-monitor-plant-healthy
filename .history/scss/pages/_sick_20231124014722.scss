@@ -1,0 +1,8 @@
+@import "../abstracts";
+
+.sick {
+    margin-top: 30px;
+    &__inner {
+        background: #a3b18a;
+    }
+}

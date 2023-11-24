@@ -1,0 +1,29 @@
+@import "../abstracts";
+
+.service {
+    margin-top: 30px;
+
+    &__heading {
+        @include heading;
+        font-size: 3rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        color: $color-green;
+        margin-left: -2px;
+        text-align: center;
+    }
+
+    &__operation {
+
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .service__img {
+            width: ;
+        }
+    }
+}

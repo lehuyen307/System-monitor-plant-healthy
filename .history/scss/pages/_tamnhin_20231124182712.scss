@@ -1,0 +1,60 @@
+@import "../abstracts";
+
+.nav__page {
+    .nav__inner {
+        margin-top: 50px;
+        display: flex;
+        column-gap: 20px;
+
+        .nav__content {
+            height: 400px;
+            width: 800px;
+            object-fit: contain;
+        }
+    }
+
+    .nav__quotes {
+        margin-top: 5px;
+        font-size: 3.6rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        width: 900px;
+    }
+
+    .nav__tittle {
+        margin-left: 500px;
+        margin-top: 70px;
+        font-size: 2.5rem;
+
+        &.tittle-1 {
+            margin-left: 20px;
+        }
+
+        &.tittle-2 {
+            margin-left: -;
+        }
+    }
+
+    .nav__text {
+        text-align: right;
+        font-style: italic;
+        margin-top: 10px;
+        font-size: 1.8rem;
+        line-height: 1.4;
+
+        &.tittle-1 {
+            text-align: left;
+        }
+    }
+}
+
+.nav__page.pageSpecial {
+    margin-top: 50px;
+    background-color: #f5ebe0;
+    padding: 30px 0;
+
+    .nav__inner {
+        display: flex;
+        column-gap: 20px;
+    }
+}

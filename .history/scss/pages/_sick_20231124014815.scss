@@ -1,0 +1,18 @@
+@import "../abstracts";
+
+.sick {
+    margin-top: 30px;
+    &__inner {
+        border-radius: 5px;
+        background: #a3b18a;
+
+        .sick__row {
+            display: flex;
+
+            .sick__title {
+                font-size: 3rem;
+                font
+            }
+        }
+    }
+}
