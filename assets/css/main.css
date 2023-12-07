@@ -1346,6 +1346,7 @@ a {
   pointer-events: none;
 }
 .btn__login > .welcome {
+  display: inline;
   margin-left: 5px;
 }
 .btn__login > i {
@@ -1353,6 +1354,7 @@ a {
   font-size: 1.4rem;
 }
 .btn__login .userName {
+  display: inline;
   font-weight: 500;
   font-size: 1.7rem;
   font-family: "Sora";
@@ -2167,6 +2169,7 @@ a {
 }
 .news__inner {
   display: flex;
+  position: relative;
 }
 .news__list {
   display: flex;
@@ -2259,7 +2262,48 @@ a {
 .news__sidebar .news__item2 > a:hover {
   color: #0b650f;
 }
+.news__listNumber {
+  position: absolute;
+  left: 29%;
+  bottom: -20px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  cursor: pointer;
+}
+.news__listNumber .number {
+  border-radius: 2px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #0b650f;
+  transition: all 0.25s linear;
+}
+.news__listNumber .number:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
 
+.image-loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 99%;
+  width: 40px;
+  height: 40px;
+  border: 5px solid #2979ff;
+  border-left: 5px solid transparent;
+  animation: spin 1s infinite linear forwards;
+}
+
+@keyframes spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
 .nav {
   margin-top: 50px;
 }
