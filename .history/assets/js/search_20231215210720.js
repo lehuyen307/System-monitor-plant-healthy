@@ -103,13 +103,9 @@ fetchSearch1();
 // fetchSearch2();
 
 const headerInput = document.querySelector(".header__input");
-headerInput.addEventListener(
-  "keydown",
-  debounceFn(function (e) {
-    const searchItem = e.target.value;
-    console.log(searchItem);
-    const path =
-      searchItem !== "" ? `${url1}?nameItem_like=${searchItem}` : url1;
-    fetchSearch1(path);
-  }, 500)
-);
+headerInput.addEventListener("keydown", debounceFn(function (e) {
+  const searchItem = e.target.value;
+  console.log(searchItem);
+  const path = searchItem !== "" ? `${url1}?nameItem_like=${searchItem}` : url1;
+  fetchSearch1(path);
+}));

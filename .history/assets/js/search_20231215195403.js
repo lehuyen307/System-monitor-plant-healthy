@@ -56,6 +56,7 @@ const createItemSick = (item) => {
 };
 
 // dùng try catch thì async await đi cùng và không dùng then()
+
 const url1 = "/listTinTuc";
 const fetchSearch1 = async (link = url1) => {
   try {
@@ -103,13 +104,9 @@ fetchSearch1();
 // fetchSearch2();
 
 const headerInput = document.querySelector(".header__input");
-headerInput.addEventListener(
-  "keydown",
-  debounceFn(function (e) {
-    const searchItem = e.target.value;
-    console.log(searchItem);
-    const path =
-      searchItem !== "" ? `${url1}?nameItem_like=${searchItem}` : url1;
-    fetchSearch1(path);
-  }, 500)
-);
+headerInput.addEventListener("keydown", function (e) {
+  const searchItem = e.target.value;
+  console.log(searchItem);
+  const path = searchItem !== "" ? `${url1}?nameItem_like=${searchItem}` : url1;
+  fetchSearch1(path);
+});
